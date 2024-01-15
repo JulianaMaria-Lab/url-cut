@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     border: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
   }
  
 body {
@@ -36,40 +36,51 @@ body {
     justify-content: center;
 }
  
-.input-url {
+#input-url {
     padding: 12px 20px;
-    text-align: center;
     outline: transparent;
-    width: 40%;
-    border-radius: 50px;
-    font-size: 20px;
     color: #1E272E;
-}
-
-.input {
     font-size: 1em;
     font-family: 'Press Start 2P', normal;
-    width: 40%;
-    height: 70px;
+    width: 50%;
+    height: 65px;
     background: white;
     border: 0px;
     position: relative;
     box-shadow: 
       inset -4px 2px 1px 1px grey,
       inset -4px -2px 1px 1px lightgray,
-      inset 4px 0px 1px 1px lightgray;   
-  }
+      inset 4px 0px 1px 1px lightgray;  
+}
   
-  .input:hover {
+#input-url:hover {
     cursor: pointer;
-      background-color: #ffffff;
-  }
+    background-color: #e9e9e9;
+}
+
+#input-url:active {
+    top: -1px;
+    box-shadow: 
+      -4px 2px 1px 1px grey,
+      -4px -2px 1px 1px lightgray,
+      4px 0px 1px 1px lightgray; 
+}
+
+#input-url:focus {
+  border: 4px solid black;
+  height: 75px;
+  bottom: 3.75px;
+  box-shadow: 
+  inset -4px 2px 1px 1px grey,
+  inset -4px -2px 1px 1px lightgray,
+  inset 4px 0px 1px 1px lightgray;
+}
 
 .btn {
   font-size: 1em;
   font-family: 'Press Start 2P', sans-serif;                                    
   width: 200px;
-  height: 70px;
+  height: 65px;
   background: #06C1DE;
   border: 0px;
   position: relative;
